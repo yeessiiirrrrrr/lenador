@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Steppe';
+    src: url('fonts/Steppe.woff2') format('woff2'),
+         url('fonts/Steppe.otf') format('opentype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    font-family: 'Steppe', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.black {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.white {
+    background-color: #EFEFEF;
+    color: #000000;
+}
+
+.video-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: translatez(0);
+}
+
+.animation-vid {
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;   
+    margin: auto;
+    transform: translateZ(0);
+    z-index: 0;
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.naming {
+    position: absolute;
+    left: 140px;
+    top: 57vh;
+    font-family: 'Steppe';
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    z-index: 2;
+}
+
+.small-desc {
+    position: absolute;
+    left: 140px;
+    top: 64vh;
+    font-family: 'Steppe';
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    z-index: 2;
+}
+
+.price {
+    position: absolute;
+    left: 140px;
+    top: 70.6vh;
+    font-family: 'Steppe';
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.09em;
+    z-index: 2;
+}
+
+.volume {
+    position: absolute;
+    left: 140px;
+    top: 74.6vh;
+    font-family: 'Steppe';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    z-index: 2;
+}
+
+.lenador-logo {
+    position: absolute;
+    width: 553px;
+    height: 168px;
+    left: 140px;
+    top: 32vh;
+    z-index: 2;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
